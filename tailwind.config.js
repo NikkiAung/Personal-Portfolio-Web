@@ -10,6 +10,9 @@ export default {
     extend: {
       fontFamily : {
         'sans' : ['Inter','sans-serif']
+      },
+      transitionProperty : {
+        'transform-bg': 'transform, background-color',
       }
     },
   },
