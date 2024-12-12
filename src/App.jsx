@@ -1,5 +1,6 @@
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
+import About from "./Components/About"
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <Header/>
       <main>
         <Hero/>
+        <About/>
       </main>
     </>
   )
