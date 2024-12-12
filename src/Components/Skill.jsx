@@ -1,3 +1,5 @@
+import SkillCard from './SkillCard'
+
 const skillItem = [
     {
       imgSrc: '/images/figma.svg',
@@ -39,6 +41,26 @@ const skillItem = [
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
+    {
+      imgSrc: '/images/postman.svg',
+      label: 'Postman',
+      desc: 'Backend Server Test'
+    },
+    {
+      imgSrc: '/images/python.svg',
+      label: 'Python',
+      desc: 'Data Structure & Algorithm'
+    },
+    {
+      imgSrc: '/images/streamlit.svg',
+      label: 'Streamlit',
+      desc: 'Framework'
+    },
+    {
+      imgSrc: '/images/java.svg',
+      label: 'Java',
+      desc: 'OOP Concept'
+    },
 ];
 
 const Skill = () => {
@@ -52,11 +74,11 @@ const Skill = () => {
                 Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
             </p>
 
-            <div>
+            <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
                 {
                     skillItem.map(({imgSrc, label, desc},key)=> 
                     (
-                        'SkillCard'
+                        <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc}/>
                     ))
                 }
             </div>

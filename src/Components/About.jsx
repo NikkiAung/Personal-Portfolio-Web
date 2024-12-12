@@ -17,7 +17,7 @@ const About = () => {
       <div className='container'>
         <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12'>
             <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]'>
-            Hello & မင်္ဂလာပါ 🇲🇲 ! I&apos;m Aung Nanda Oo, a passionate front-end developer and aspiring software engineer studying Computer Science at City College of San Francisco. My journey into tech started with curiosity and self-learning since IGCSE O-level, transforming challenges into a love for coding. I specialize in creating intuitive, visually engaging user interfaces using React, HTML, CSS, and JavaScript. I enjoy building scalable, reusable components that bring ideas to life, focusing on real-world applications that make an impact.
+            Hello & <span className="font-bold">မင်္ဂလာပါ 🇲🇲</span> ! I&apos;m Aung Nanda Oo, a passionate front-end developer and aspiring software engineer studying Computer Science at City College of San Francisco. My journey into tech started with curiosity and self-learning since IGCSE O-level, transforming challenges into a love for coding. I specialize in creating intuitive, visually engaging user interfaces using React, HTML, CSS, and JavaScript. I enjoy building scalable, reusable components that bring ideas to life, focusing on real-world applications that make an impact.
             </p>
 
             <div className='flex flex-wrap items-center gap-4'>
