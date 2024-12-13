@@ -24,7 +24,7 @@ const SkillCard = ({
     )
 }
 
-SkillCard.protoTypes = {
+SkillCard.propTypes = {
     imgSrc : PropTypes.string.isRequired,
     label : PropTypes.string.isRequired,
     desc : PropTypes.string.isRequired,
