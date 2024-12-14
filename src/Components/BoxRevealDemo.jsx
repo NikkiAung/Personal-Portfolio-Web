@@ -34,10 +34,12 @@ function BoxRevealDemo() {
 
       <BoxReveal boxColor={"#FFFFFF"} duration={0.5}>
           <div className="flex items-center gap-3">
-                    <ButtonPrimary
-                      label="Download CV"
-                      icon='download'
-                    />
+                    <a href="/AungNanda_Oo_Resume.pdf" download="AungNanda_Oo_Resume.pdf">
+                      <ButtonPrimary
+                        label="Download RESUME"
+                        icon='download'
+                      />
+                    </a>
                     <ButtonOutline
                       href="#about"
                       label="Scroll down"

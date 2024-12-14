@@ -56,6 +56,10 @@ body {
 .section {
   @apply pt-20 lg:pt-32
 }
+
+.reveal-up {
+  @apply translate-y-20 opacity-0
+}
 /* --------- *\
  * COMPONENTS
 \* --------- */
@@ -125,4 +129,18 @@ body {
 
 .text-field::placeholder {
   @apply text-zinc-400
+}
+
+@layer utilities {
+  .transition-all {
+    transition-property: all;
+  }
+  
+  .duration-700 {
+    transition-duration: 700ms;
+  }
+  
+  .transform {
+    transform-origin: center;
+  }
 }

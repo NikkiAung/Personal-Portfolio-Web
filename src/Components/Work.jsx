@@ -1,65 +1,114 @@
+import { useInView } from 'react-intersection-observer';
 import ProjectCard from "./ProjectCard";
+import React from 'react';
+import { PROJECT_LINKS } from '../config/projectLinks';
 const works = [
     {
       imgSrc: '/images/project-1.png',
       title: 'BurmeseEduGuide website',
       tags: ['GEMINI-API', 'RAG', 'PYTHON','STREAMLIT','FIREBASE'],
-      projectLink: 'https://github.com/NikkiAung/Building-LLM-App'
+      projectLink: 'PROJECT_LINKS.BURMESE_EDU'
     },
     {
       imgSrc: '/images/project-2.png',
       title: 'Diet Plan Design',
-      tags: ['FIGMA', 'UI/UX'],
-      projectLink: 'https://www.figma.com/proto/F1N3gjhG7RIeVlg2ctZNBq/BUD-Nov?page-id=49%3A3&node-id=49-4&node-type=frame&viewport=1062%2C-234%2C0.13&t=xGJ3wk5vp3265U5J-1&scaling=scale-down&content-scaling=fixed'
+      tags: ['Figma','UI/UX','Web Design','Layout'],
+      projectLink: 'PROJECT_LINKS.DIET_PLAN'
     },
     {
       imgSrc: '/images/project-3.jpg',
       title: 'Full Stack Recipe Website',
       tags: ['Mongo.DB','Express.js','React','Node.js'],
-      projectLink: 'https://github.com/NikkiAung/MERN-Stack-Recipe-Project'
+      projectLink: 'PROJECT_LINKS.RECIPE'
     },
     {
       imgSrc: '/images/project-5.jpg',
       title: 'Library Website',
       tags: ['JavaScript', 'React', 'Firebase'],
-      projectLink: 'https://github.com/NikkiAung/Library'
+      projectLink: 'PROJECT_LINKS.LIBRARY'
     },
     {
       imgSrc: '/images/project-4.jpg',
       title: 'Real Estate Website',
       tags: ['Web-design', 'HTML','CSS'],
-      projectLink: 'https://nikkiaung.github.io/Real-Estate-Website/'
+      projectLink: 'PROJECT_LINKS.REAL_ESTATE'
     },
     {
       imgSrc: '/images/project-6.jpg',
       title: 'Tic Tac Toe Game',
-      tags: ['Java', 'Pattern Recognition', 'Algorithm'],
-      projectLink: 'https://github.com/NikkiAung/TicTacToeButAdvanced'
+      tags: ['Java', 'Pattern Recognition'],
+      projectLink: 'PROJECT_LINKS.TIC_TAC_TOE'
     },
 ];
 
 const Work = () => {
   return (
-    <section id='work'className='section'>
-        <div className="container">
-            <h2 className='headline-2 mb-8'>
-                My portfolio highlights
-            </h2>
+    <section id='work' className='section'>
+      <div className="container">
+        <h2 className='headline-2 mb-8'>
+          My portfolio highlights
+        </h2>
 
-            <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-                {works.map(({imgSrc,title,tags,projectLink},key)=> (
-                    <ProjectCard
-                        key={key} 
-                        imgSrc={imgSrc}
-                        title={title}
-                        tags={tags}
-                        projectLink={projectLink}
-                    />
-                ))}
-            </div>
+        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
+          {works.map(({imgSrc, title, tags, projectLink}, index) => (
+            <LazyProjectCard
+              key={index}
+              imgSrc={imgSrc}
+              title={title}
+              tags={tags}
+              projectLink={projectLink}
+              delay={index * 0.1} // Add stagger effect
+            />
+          ))}
         </div>
+      </div>
     </section>
   )
 }
 
-export default Work
+// Create a wrapper component for lazy loading
+const LazyProjectCard = ({ imgSrc, title, tags, projectLink, delay }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+    rootMargin: '150px 0px',
+  });
+
+  // Preload image
+  const [imageLoaded, setImageLoaded] = React.useState(false);
+  
+  React.useEffect(() => {
+    if (inView) {
+      const img = new Image();
+      img.src = imgSrc;
+      img.onload = () => {
+        setImageLoaded(true);
+      };
+    }
+  }, [inView, imgSrc]);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-1000 ease-out transform ${
+        inView && imageLoaded
+          ? 'opacity-100 translate-y-0' 
+          : 'opacity-0 translate-y-10'
+      }`}
+      style={{ 
+        transitionDelay: `${delay}s`,
+        transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
+      }}
+    >
+      <ProjectCard
+        imgSrc={imgSrc}
+        title={title}
+        tags={tags}
+        projectLink={projectLink}
+        classes=""
+      />
+    </div>
+  );
+};
+
+export default Work;

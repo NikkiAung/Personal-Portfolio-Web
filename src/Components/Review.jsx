@@ -1,4 +1,10 @@
 import ReviewCard from "./ReviewCard";
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP,ScrollTrigger);
+
 const reviews = [
     {
       content: 'Aung is a top-performing, highly motivated, and reliable Computer Science student excelling in problem-solving and communication, strongly recommended for internships in CS or related fields.',
@@ -38,13 +44,22 @@ const reviews = [
     }
 ];
 const Review = () => {
+  useGSAP(()=> {
+    gsap.to('.scrub-slide', {
+      scrollTrigger : {
+        trigger: '.scrub-slide',
+        scrub: true,
+      },
+      x:'-1000'
+    })
+  });
   return (
     <section id="reviews" className="section overflow-hidden">
         <div className="container">
-            <h2 className="headline-2 mb-8">
+            <h2 className="headline-2 mb-8 reveal-up">
                 What My STEM Professors And CS Friends Say
             </h2>
-            <div className="flex items-stretch gap-3 w-fit">
+            <div className="scrub-slide flex items-stretch gap-3 w-fit">
                 {reviews.map(({content,name,imgSrc,company},key)=> (
                     < ReviewCard 
                         key={key}

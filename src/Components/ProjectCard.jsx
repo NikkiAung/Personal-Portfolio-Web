@@ -13,8 +13,8 @@ const ProjectCard = ({
             <img 
                 src={imgSrc} 
                 alt={title} 
-                loading="lazy"
-                className="img-cover" 
+                // loading="lazy"
+                className="" 
             />
         </figure>
 
@@ -40,7 +40,7 @@ const ProjectCard = ({
             </div>
         </div>
 
-        <a href={projectLink} target="_blank"  className="absolute inset-0"></a>
+        <a href={projectLink} target="_blank" className="absolute inset-0"></a>
     </div>
   )
 }
