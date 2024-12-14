@@ -25,23 +25,23 @@ const sitemap = [
 const socials = [
     {
       label: 'GitHub',
-      href: 'https://www.github.com/codewithsadee-org'
+      href: 'https://github.com/NikkiAung'
     },
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/codewithsadee'
+      href: 'https://www.linkedin.com/in/aung-nanda-oo-8962292b2/'
     },
     {
       label: 'Twitter X',
-      href: 'https://x.com/codewithsadee_'
+      href: 'https://x.com/nikkiaung'
     },
     {
       label: 'Instagram',
-      href: 'https://www.instagram.com/codewithsadee'
+      href: 'https://www.instagram.com/nikki_aung/'
     },
     {
       label: 'CodePen',
-      href: 'https://codepen.io/codewithsadee'
+      href: 'https://codepen.io/NikkiAung'
     }
 ];
 
