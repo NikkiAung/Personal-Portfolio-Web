@@ -16,9 +16,39 @@
     <!-- Materical symbols rounded -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
 
+    <!-- Dialogflow Messenger Stylesheet -->
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Dialogflow Messenger Script -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+    <!-- Dialogflow Messenger -->
+    <df-messenger
+      project-id="vaulted-aleph-425921-h9"
+      agent-id="10c98df8-d1eb-4e50-a4dc-9a2711ce6ad6"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble chat-title="Aung Chat Bot"></df-messenger-chat-bubble>
+    </df-messenger>
+
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 100px; /* Move the chatbot higher from the bottom */
+        right: 16px;
+      }
+    </style>
+
+    <!-- Main JavaScript -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
