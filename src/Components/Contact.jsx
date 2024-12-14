@@ -78,25 +78,24 @@ const Contact = () => {
                             className="text-field"
                         />
                     </div>
-                    
-                    <div className="mb-4">
-                       <label htmlFor="message" className="label">
-                            Message
-                       </label>
-
-                       <textarea 
-                            name="message" 
-                            id="message"
-                            placeholder="Hi!"
-                            required
-                            className="text-field resize-y min-h-32 max-h-80">
-                        </textarea>
-                    </div>
-                    
-                    <button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center">
-                        Submit
-                    </button>
                 </div>
+                <div className="mb-4">
+                    <label htmlFor="message" className="label">
+                            Message
+                    </label>
+
+                    <textarea 
+                        name="message" 
+                        id="message"
+                        placeholder="Hi!"
+                        required
+                        className="text-field resize-y min-h-32 max-h-80">
+                    </textarea>
+                </div>
+                    
+                <button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center">
+                    Submit
+                </button>
             </form>
 
         </div>
