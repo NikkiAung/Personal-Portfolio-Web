@@ -27,12 +27,12 @@ const About = () => {
                             <div className="flex items-center md:mb-2">
                                 {number == 1 ? 
                                 <div className='flex gap-1 items-center'> 
-                                    <span className="text-sky-400 font-semibold md:text-3xl">{`<`}</span>
+                                    <span className="text-sky-400 font-semibold text-3xl md:text-3xl">{`<`}</span>
                                     <span className="text-2xl font-semibold md:text-4xl"> <HyperTextDemo number={number}/></span> 
                                 </div>: 
                                 <>
                                     <span className="text-2xl font-semibold md:text-4xl"><HyperTextDemo number={number}/></span>
-                                    <span className="text-sky-400 font-semibold md:text-3xl">+</span>
+                                    <span className="text-sky-400 font-semibold text-3xl md:text-3xl">+</span>
                                 </>
                                 }
                             </div>

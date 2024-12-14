@@ -10,6 +10,7 @@ import { ReactLenis } from 'lenis/react'
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
+import DockDemo from './Components/DockDemo'
 
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
@@ -43,6 +44,15 @@ const App = () => {
         <Review/>
         <Contact/>
         <Footer/>
+        <div style={{
+          position: 'fixed',
+          bottom: 20,
+          left: 0,
+          width: '100%',
+          zIndex: 1000
+        }}>
+          <DockDemo />
+        </div>
       </main>
     </ReactLenis>
   )
