@@ -4,37 +4,37 @@ import React from 'react';
 import PROJECT_LINKS from '../config/projectLinks';
 const works = [
     {
-      imgSrc: '/images/project-1.png',
+      imgSrc: 'images/project-1.png',
       title: 'BurmeseEduGuide website',
       tags: ['GEMINI-API', 'RAG', 'PYTHON','STREAMLIT','FIREBASE'],
       projectLink: PROJECT_LINKS.BURMESE_EDU
     },
     {
-      imgSrc: '/images/project-2.png',
+      imgSrc: 'images/project-2.png',
       title: 'Diet Plan Design',
       tags: ['Figma','UI/UX','Web Design','Layout'],
       projectLink: PROJECT_LINKS.DIET_PLAN
     },
     {
-      imgSrc: '/images/project-3.jpg',
+      imgSrc: 'images/project-3.jpg',
       title: 'Full Stack Recipe Website',
       tags: ['Mongo.DB','Express.js','React','Node.js'],
       projectLink: PROJECT_LINKS.RECIPE
     },
     {
-      imgSrc: '/images/project-5.png',
+      imgSrc: 'images/project-5.png',
       title: 'Library Website',
       tags: ['JavaScript', 'React', 'Firebase'],
       projectLink: PROJECT_LINKS.LIBRARY
     },
     {
-      imgSrc: '/images/project-4.png',
+      imgSrc: 'images/project-4.png',
       title: 'Real Estate Website',
       tags: ['Web-design', 'HTML','CSS'],
       projectLink: PROJECT_LINKS.REAL_ESTATE
     },
     {
-      imgSrc: '/images/project-6.png',
+      imgSrc: 'images/project-6.png',
       title: 'Tic Tac Toe Game',
       tags: ['Java', 'Pattern Recognition'],
       projectLink: PROJECT_LINKS.TIC_TAC_TOE
