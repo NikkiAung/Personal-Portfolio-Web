@@ -12,7 +12,7 @@ const Hero = () => {
                 {/* bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65%  */}
                 <figure className="w-full max-w-[300px] ml-auto aspect-square overflow-hidden">
                     <img 
-                        src={`${BASE_PATH}images/hero-banner.svg`}
+                        src={`${BASE_PATH}images/hero-banner.jpg`}
                         width={800} 
                         height={800} 
                         alt="Aung Nanda Oo" 
