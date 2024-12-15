@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-
+const BASE_PATH = '/Personal-Portfolio-Web/';
 const Navbar = ({navOpen}) => {
     const lastActiveLink = useRef();
     const activeBox = useRef();

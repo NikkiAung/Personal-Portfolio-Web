@@ -1,5 +1,5 @@
 import BoxRevealDemo from "@/components/BoxRevealDemo"
-
+const BASE_PATH = '/Personal-Portfolio-Web/';
 const Hero = () => {
   return (
     <section id='home' className='pt-28 lg:pt-36'>
@@ -12,7 +12,7 @@ const Hero = () => {
                 {/* bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65%  */}
                 <figure className="w-full max-w-[300px] ml-auto aspect-square overflow-hidden">
                     <img 
-                        src="/images/hero-banner.jpg" 
+                        src={`${BASE_PATH}images/hero-banner.svg`}
                         width={800} 
                         height={800} 
                         alt="Aung Nanda Oo" 

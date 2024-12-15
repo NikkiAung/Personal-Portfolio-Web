@@ -2,7 +2,7 @@ import ReviewCard from "./ReviewCard";
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
-
+const BASE_PATH = '/Personal-Portfolio-Web/';
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 const reviews = [
@@ -65,7 +65,7 @@ const Review = () => {
                         key={key}
                         content={content} 
                         name={name}
-                        imgSrc={imgSrc}
+                        imgSrc={BASE_PATH+imgSrc}
                         company={company}
                     />
                 ))}

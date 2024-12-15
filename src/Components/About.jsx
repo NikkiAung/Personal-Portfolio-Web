@@ -1,5 +1,5 @@
 import { HyperTextDemo } from "./magicui-animation/HyperTextDemo";
-
+const BASE_PATH = '/Personal-Portfolio-Web/';
 const aboutItems = [
     {
       label: 'Project done',
@@ -40,7 +40,7 @@ const About = () => {
                         </div>
                     ))
                 }
-                <img src="/images/logo.svg" alt="Logo" width={30} height={30} className='ml-auto md:w-[40px] md:h-[40px]'/>
+                <img src={`${BASE_PATH}images/logo.svg`} alt="Logo" width={30} height={30} className='ml-auto md:w-[40px] md:h-[40px]'/>
             </div>
         </div>
       </div>

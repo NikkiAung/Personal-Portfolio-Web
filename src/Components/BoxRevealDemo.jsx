@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { ButtonPrimary,ButtonOutline } from "./Button";
-
+const BASE_PATH = '/Personal-Portfolio-Web/';
 function BoxRevealDemo() {
   return (
     <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
@@ -10,7 +10,7 @@ function BoxRevealDemo() {
             <div className="flex items-center gap-3">
                     <figure className="img-box w-9 h-9 rounded-lg">
                         <img 
-                        src="/images/avatar-1.jpg"
+                        src={`${BASE_PATH}/images/avatar-1.jpg`}
                         width={40}
                         height={40} 
                         alt="Aung portrait" className="img-cover"/>
@@ -34,7 +34,7 @@ function BoxRevealDemo() {
 
       <BoxReveal boxColor={"#FFFFFF"} duration={0.5}>
           <div className="flex items-center gap-3">
-                    <a href="/AungNanda_Oo_Resume.pdf" download="AungNanda_Oo_Resume.pdf">
+                    <a href={`${BASE_PATH}AungNanda_Oo_Resume.pdf`} download="AungNanda_Oo_Resume.pdf">
                       <ButtonPrimary
                         label="Download RESUME"
                         icon='download'

@@ -1,5 +1,5 @@
 import SkillCard from './SkillCard'
-
+const BASE_PATH = '/Personal-Portfolio-Web/';
 const skillItem = [
     {
       imgSrc: '/images/figma.svg',
@@ -78,7 +78,7 @@ const Skill = () => {
                 {
                     skillItem.map(({imgSrc, label, desc},key)=> 
                     (
-                        <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} className="reveal-up"/>
+                        <SkillCard key={key} imgSrc={BASE_PATH+imgSrc} label={label} desc={desc} className="reveal-up"/>
                     ))
                 }
             </div>
