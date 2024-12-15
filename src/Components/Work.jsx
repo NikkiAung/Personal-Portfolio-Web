@@ -2,6 +2,7 @@ import { useInView } from 'react-intersection-observer';
 import ProjectCard from "./ProjectCard";
 import React from 'react';
 import PROJECT_LINKS from '../config/projectLinks';
+const BASE_PATH = '/Personal-Portfolio-Web/';
 const works = [
     {
       imgSrc: 'images/project-1.png',
@@ -53,7 +54,7 @@ const Work = () => {
           {works.map(({imgSrc, title, tags, projectLink}, index) => (
             <LazyProjectCard
               key={index}
-              imgSrc={imgSrc}
+              imgSrc={BASE_PATH+imgSrc}
               title={title}
               tags={tags}
               projectLink={projectLink}
