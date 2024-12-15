@@ -22,19 +22,19 @@ const works = [
       projectLink: PROJECT_LINKS.RECIPE
     },
     {
-      imgSrc: '/images/project-5.jpg',
+      imgSrc: '/images/project-5.png',
       title: 'Library Website',
       tags: ['JavaScript', 'React', 'Firebase'],
       projectLink: PROJECT_LINKS.LIBRARY
     },
     {
-      imgSrc: '/images/project-4.jpg',
+      imgSrc: '/images/project-4.png',
       title: 'Real Estate Website',
       tags: ['Web-design', 'HTML','CSS'],
       projectLink: PROJECT_LINKS.REAL_ESTATE
     },
     {
-      imgSrc: '/images/project-6.jpg',
+      imgSrc: '/images/project-6.png',
       title: 'Tic Tac Toe Game',
       tags: ['Java', 'Pattern Recognition'],
       projectLink: PROJECT_LINKS.TIC_TAC_TOE
