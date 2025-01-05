@@ -5,7 +5,7 @@ import PROJECT_LINKS from '../config/projectLinks';
 const BASE_PATH = '/Personal-Portfolio-Web/';
 const works = [
     {
-      imgSrc: 'images/project-1.png',
+      imgSrc: 'images/project-11.png',
       title: 'BurmeseEduGuide website',
       tags: ['GEMINI-API', 'RAG', 'PYTHON','STREAMLIT','FIREBASE'],
       projectLink: PROJECT_LINKS.BURMESE_EDU
@@ -25,13 +25,13 @@ const works = [
     {
       imgSrc: 'images/project-5.png',
       title: 'Library Website',
-      tags: ['JavaScript', 'React', 'Firebase'],
+      tags: ['JavaScript', 'React', 'Firebase','Tailwind CSS'],
       projectLink: PROJECT_LINKS.LIBRARY
     },
     {
       imgSrc: 'images/project-4.png',
       title: 'Real Estate Website',
-      tags: ['Web-design', 'HTML','CSS'],
+      tags: ['Web-design', 'HTML','CSS','Responsive'],
       projectLink: PROJECT_LINKS.REAL_ESTATE
     },
     {
@@ -55,7 +55,7 @@ const works = [
     {
       imgSrc: 'images/project-9.png',
       title: 'Landify Landing Page',
-      tags: ['HTML', 'CSS'],
+      tags: ['HTML', 'Tailwind CSS'],
       projectLink: PROJECT_LINKS.LANDIFY
     },
 ];

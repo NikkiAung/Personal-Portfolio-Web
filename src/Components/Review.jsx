@@ -19,7 +19,7 @@ const reviews = [
       company: 'CCSF Calculus-1 Instructor'
     },
     {
-      content: 'Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.',
+      content: 'Outstanding developer! Aung Nanda Oo was also an excellent tutor for the CS Department. He was highly responsive and often covered for other tutors when needed. I would recommend him enthusiastically.',
       name: 'Jonathan Potter',
       imgSrc: '/images/people-3.jpg',
       company: 'CS Department Chair'
