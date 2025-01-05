@@ -40,6 +40,24 @@ const works = [
       tags: ['Java', 'Pattern Recognition'],
       projectLink: PROJECT_LINKS.TIC_TAC_TOE
     },
+    {
+      imgSrc: 'images/project-7.png',
+      title: 'Full Stack Doctor Booking System',
+      tags: ['Mongo.DB','Express.js','React','Node.js','Cloudinary','Render'],
+      projectLink: PROJECT_LINKS.DOCTOR
+    },
+    {
+      imgSrc: 'images/project-8.png',
+      title: 'Amazon Clone',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      projectLink: PROJECT_LINKS.AMAZON
+    },
+    {
+      imgSrc: 'images/project-9.png',
+      title: 'Landify Landing Page',
+      tags: ['HTML', 'CSS'],
+      projectLink: PROJECT_LINKS.LANDIFY
+    },
 ];
 
 const Work = () => {
