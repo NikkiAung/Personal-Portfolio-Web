@@ -35,12 +35,6 @@ const works = [
       projectLink: PROJECT_LINKS.REAL_ESTATE
     },
     {
-      imgSrc: 'images/project-6.png',
-      title: 'Tic Tac Toe Game',
-      tags: ['Java', 'Pattern Recognition'],
-      projectLink: PROJECT_LINKS.TIC_TAC_TOE
-    },
-    {
       imgSrc: 'images/project-7.png',
       title: 'Full Stack Doctor Booking System',
       tags: ['Mongo.DB','Express.js','React','Node.js','Cloudinary','Render'],
@@ -51,6 +45,12 @@ const works = [
       title: 'Amazon Clone',
       tags: ['HTML', 'CSS', 'JavaScript'],
       projectLink: PROJECT_LINKS.AMAZON
+    },
+    {
+      imgSrc: 'images/project-6.png',
+      title: 'Tic Tac Toe Game',
+      tags: ['Java', 'Pattern Recognition'],
+      projectLink: PROJECT_LINKS.TIC_TAC_TOE
     },
     {
       imgSrc: 'images/project-9.png',
