@@ -47,7 +47,7 @@ const works = [
       projectLink: PROJECT_LINKS.AMAZON
     },
     {
-      imgSrc: 'images/project-6.png',
+      imgSrc: 'images/project-10.png',
       title: 'Tic Tac Toe Game',
       tags: ['Java', 'Pattern Recognition'],
       projectLink: PROJECT_LINKS.TIC_TAC_TOE
