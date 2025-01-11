@@ -58,6 +58,12 @@ const works = [
       tags: ['HTML', 'Tailwind CSS'],
       projectLink: PROJECT_LINKS.LANDIFY
     },
+    {
+      imgSrc: 'images/project-14.png',
+      title: 'Car Wash Website',
+      tags: ['HTML', 'Tailwind CSS','Responsive'],
+      projectLink: PROJECT_LINKS.Car_Wash
+    },
 ];
 
 const Work = () => {
