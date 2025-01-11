@@ -8,7 +8,7 @@ const PROJECT_LINKS = {
     DOCTOR : 'https://doctor-appointment-booking-system-front-8y3d.onrender.com/',
     AMAZON : 'https://nikkiaung.github.io/Amazon-clone/amazon.html',
     LANDIFY : 'https://nikkiaung.github.io/Landify-landing-lage/src/index.html',
-    projectLink : 'https://car-wash-website.onrender.com/',
+    Car_Wash : 'https://car-wash-website.onrender.com/',
 };
 
 export default PROJECT_LINKS
