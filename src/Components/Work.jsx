@@ -63,6 +63,12 @@ const works = [
       title: 'Car Wash Website',
       tags: ['HTML', 'Tailwind CSS','Responsive'],
       projectLink: PROJECT_LINKS.Car_Wash
+    },    
+    {
+      imgSrc: 'images/project-17.png',
+      title: 'AI/ML Exploration',
+      tags: ['Python', 'Pandas', 'Numpy','Matplotlib', 'Google Cloud API'],
+      projectLink: PROJECT_LINKS.AI_ML_Exploration
     },
 ];
 

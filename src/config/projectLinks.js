@@ -9,6 +9,7 @@ const PROJECT_LINKS = {
     AMAZON : 'https://nikkiaung.github.io/Amazon-clone/amazon.html',
     LANDIFY : 'https://nikkiaung.github.io/Landify-landing-lage/src/index.html',
     Car_Wash : 'https://car-wash-website.onrender.com/',
+    AI_ML_Exploration : 'https://github.com/NikkiAung/ML-In-Prod',
 };
 
 export default PROJECT_LINKS
